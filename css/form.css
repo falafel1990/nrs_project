@@ -1,4 +1,6 @@
 /*Form*/
+
+
 /*Область формы*/
 
 .formArea {
@@ -10,7 +12,7 @@
 	font: 1.2rem 'Rubik', sans-serif;
 }
 
-.formTitle	{
+.formTitle {
 	font-size: 2rem;
 	color: #fff;
 	margin-bottom: 15px;
@@ -177,12 +179,12 @@
 	background-color: #D9584E;
 	color: #FBFCFB;
 	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
 	width: 50%;
 	padding: 13px 0;
 	font-size: 18px;
 	text-transform: uppercase;
-	letter-spacing: .0875em;
-	font-weight: 500;
+	letter-spacing: .0975em;
 	border-radius: 4px;
 	outline: 0;
 	-webkit-box-shadow: 0 0 5px rgba(5, 19, 41, 0.5);
@@ -197,6 +199,7 @@
 	background-color: #D9584E;
 	color: #FBFCFB;
 	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
 	width: 100%;
 	padding: 20px 0;
 	font-size: 18px;
@@ -297,66 +300,71 @@
 	}
 }
 
+
 /*ПОЛИТИКА КОНФИДЕНЦИЛЬНОСТИ*/
+
 .checkbox>label {
 	text-align: center;
 }
 
 .checkbox {
-  vertical-align: top;
-  margin: 0 3px 0 0;
-  width: 2rem;
-  height: 2rem;
+	vertical-align: top;
+	margin: 0 3px 0 0;
+	width: 2rem;
+	height: 2rem;
 }
-.checkbox + label {
-  cursor: pointer;
+
+.checkbox+label {
+	cursor: pointer;
 }
 
 .checkbox:not(checked) {
-  position: absolute;
-  opacity: 0;
-}
-.checkbox:not(checked) + label {
-  position: relative; 
-  padding: 0 0 0 60px; 
+	position: absolute;
+	opacity: 0;
 }
 
-.checkbox:not(checked) + label:before {
-  content: '';
-  position: absolute;
-  top: 1rem;
-  left: 0;
-  width: 4.5rem;
-  height: 2rem;
-  border-radius: 13px;
-  background: #CDD1DA;
-  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
-  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+.checkbox:not(checked)+label {
+	position: relative;
+	padding: 0 0 0 60px;
 }
 
-.checkbox:not(checked) + label:after {
-  content: '';
-  position: absolute;
-  top: 1.2rem;
-  left: 2px;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 10px;
-  background: #FFF;
-  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.3);
-  box-shadow: 0 2px 5px rgba(0,0,0,.3);
-  -webkit-transition: all .2s;
-  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+.checkbox:not(checked)+label:before {
+	content: '';
+	position: absolute;
+	top: 1rem;
+	left: 0;
+	width: 4.5rem;
+	height: 2rem;
+	border-radius: 13px;
+	background: #CDD1DA;
+	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
 }
 
-.checkbox:checked + label:before {
-  background: #ffffff;
+.checkbox:not(checked)+label:after {
+	content: '';
+	position: absolute;
+	top: 1.2rem;
+	left: 2px;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 10px;
+	background: #FFF;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	/* анимация, чтобы чекбокс переключался плавно */
 }
 
-.checkbox:checked + label:after {
-  left: 26px;
+.checkbox:checked+label:before {
+	background: #ffffff;
 }
 
-.checkbox:checked + .formBtn {
+.checkbox:checked+label:after {
+	left: 26px;
+}
+
+.checkbox:checked+.formBtn {
 	background-color: aqua !important;
 }
