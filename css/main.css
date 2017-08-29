@@ -3,16 +3,16 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Lora', sans-serif;
 	letter-spacing: 0.03rem;
 }
 
 p {
-	font-family: 'Lora', serif;
+	font-family: 'Rubik', serif;
 }
 
 p+ul {
-	font-family: 'Lora', serif;
+	font-family: 'Rubik', serif;
 	line-height: 2.1;
 	list-style: none;
 	list-style-type: none;
@@ -98,7 +98,7 @@ ul {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	text-align: center;
-	min-height: 38rem;
+	min-height: 50vh;
 	min-width: 38rem;
 	background-image: url(/img/0001.jpg);
 	background-repeat: no-repeat;
@@ -117,6 +117,7 @@ ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #ffffff;
+	min-height: 80vh;
 }
 
 .bgc_opacity {
