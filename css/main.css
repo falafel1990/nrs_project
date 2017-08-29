@@ -3,16 +3,16 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Lora', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	letter-spacing: 0.03rem;
 }
 
 p {
-	font-family: 'Rubik', serif;
+	font-family: 'Lora', serif;
 }
 
 p+ul {
-	font-family: 'Rubik', serif;
+	font-family: 'Lora', serif;
 	line-height: 2.1;
 	list-style: none;
 	list-style-type: none;
